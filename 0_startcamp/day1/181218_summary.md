@@ -3,7 +3,7 @@
 ## 1. 개발환경 설정
 
 * chocolatey
-  * 윈도우 패키지 매니저
+  * 윈도우 패키지 매니저...
 * python -v3.6.7
 * git
   * version Control System
