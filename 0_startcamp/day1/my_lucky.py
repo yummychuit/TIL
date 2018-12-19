@@ -44,3 +44,8 @@ print(my_numbers)
 # 4등 : real_numbers & my_numbers 가 4개가 같다
 # 5등 : real_numbers & my_numbers 가 3개가 같다
 # 꽝
+
+# if my_numbers == real_numbers
+#         print('1등')
+# elif my_numbers 
+# elif my_numbers 

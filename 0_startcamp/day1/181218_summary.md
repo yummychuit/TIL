@@ -3,7 +3,7 @@
 ## 1. 개발환경 설정
 
 * chocolatey
-  * 윈도우 패키지 매니저.
+  * 윈도우 패키지 매니저
 * python -v3.6.7
 * git
   * version Control System
@@ -127,29 +127,35 @@ reverse_sorted = sorted(full, reverse=True)
 메서드는 함수다! 다만 **[주어],** **동사()** 의 형식으로 이루어 지며,  [주어] 자리에 오는  object들이 할 수 있는 행동(함수)들이다.
 
 ```python
-print('hi')
-len('hi')
-type('a')
-
-scores = [45, 60, 78, 88]
-higt_score = max(scores) #최대값
-lowest_score = min(scores) #최소값 min([]), min(1,2) 최소 2개 이상의 숫자
-round(1.8) #2
-round(1.4) #1 =>반올림
-round(1.876, 2) # 소숫점 둘째자리까지 반올림
+my_list = [4, 7, 9, 1 ,3, 6]
+# 최대/최소
+max(my_list)
+min(my_list)
+#특정 요소의 인덱스. mY_list에서 한 요소가 몇번째에 있는지?
+my_list.index()
+#리스트를 뒤집으려면?
+my_list.reverse()
 
 
-first = [11.25, 18.0, 20.0]
-second = [10.75, 9.50]
+dust = 100 # <class: int>
+language = 'python' # str
+samsung = ['elec', 'sds', 's1'] # list
+# method란 object에 속해있는 함수, object가 할 수 있는 행동
 
-#full에 first 와 second 을 합쳐서 저장
-full = first + second
+language.capitalize() #맨 앞글자 대문자로
+language.replace('on', 'off') # on을 off로 바꿔라
+'python'.index('o')
 
-#full_sorted에 full을 오름차순으로 정렬하여 저장
-full_sorted = sorted(full)
+samsung.index('sds')
+samsung.count('s1') # s1이 몇 개 들어있는가
 
-#reverse_sorted 에 full을 내림차순으로 정렬하여 저장
-reverse_sorted = sorted(full, reverse=True)
+#보통은 뒤에 메소드를 작성해도 원본이 유지되나
+#유지되지 않고 원본이 바뀌는 경우도 있다. ex) .sort()
+numbers = [9, 5, 8, 1, 2]
+sorted_numbers = numbers.sort()
+
+samsung + ['bio']
+samsung.append('bio') #뒤에 내용 붙임. 원본이 바뀜!!
 
 ```
 
@@ -221,6 +227,27 @@ for key, value in lotto_data.items():
         real_numbers.append(value)
 
 real_numbers.sort()
+bonus_number = lotto_data['bnusNo']
 print(real_numbers)
 ```
+
+
+
+### 8. weather
+
+```python
+from darksky import forecast
+
+multicampus = forecast('a11e9488156cceaddf3805cad9ea8cb4', 37.501554, 127.03966)
+
+print(multicampus['currently']['summary'])
+print(multicampus['currently']['temperature'])
+
+```
+
+pip install darkskylib 입력하여 설치 => python -m pip install --upgrade pip 입력하여 업데이트
+
+Dark Sky API 에서 위치 정보 & 구글지도에서 위도경도 위치 확인
+
+cf) [PyPI – the Python Package Index · PyPI](https://pypi.org/)에 있는 파일은 vscode에서 입력하여 설치 가능
 
