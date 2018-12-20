@@ -12,4 +12,4 @@ print(multicampus['currently']['temperature'])
 
 #res = request.get(url)
 #data = res.json()
-#
+#print(data['currently']['summary'])
