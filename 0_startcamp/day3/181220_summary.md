@@ -136,6 +136,21 @@ am_i_lucky(pick_lotto, get_lotto(837))
 print(result)
 ```
 
+```python
+from lotto_functions import am_i_lucky, pick_lotto, get_lotto
+
+result = am_i_lucky(pick_lotto(), get_lotto(837))
+print(result)
+
+#↑↓ 같은 내용
+
+import lotto_functions
+
+lotto_functions.am_i_lucky(
+    lotto_functions.pick_lotto(),
+    lotto_functions.get_lotto(837)
+)
+```
 
 
 
@@ -143,9 +158,9 @@ print(result)
 
 
 
+### 참고내용
 
 ```python
-#cf
 #컨벤션 - 법칙은 아니지만 지키는 것. 관습법 같은 것.
 #리펙토링 - 이름을 적절하게 지어주는 것? 기능이 바뀌거나 성능이 바뀌는 것은 없지만 더 나아지게 코드를 바꿔주는 것.
 #arguments - 인자(args) 괄호안에 인자로 들어오는 것.
@@ -170,4 +185,60 @@ def sort():
 
 
 ```
+
+
+
+### 4. function
+
+```python
+#파일명 math_function
+
+print(__name__)
+
+def average(numbers):
+    return sum(numbers) / len(numbers)
+
+def cube(x):
+    return x * x * x
+
+
+def main():
+    my_score = [79, 84, 66, 93]
+    print('평균: ', average(my_score))
+    print(cube(3))
+
+#↑↓ 같은 내용
+
+if __name__ == '__main__':
+    my_score = [79, 84, 66, 93]
+    print('평균: ', average(my_score))
+    print(cube(3))
+```
+
+
+
+```python
+#파일명 do_math
+
+print('!', __name__)
+
+# import math_functions
+# math_functions.cube(5)
+# math_functions.average([10, 20, 30])
+
+from math_functions import cube, average
+#math_functions라는 파일에서 정의한 cube와 average라는 함수 불러서 import
+#import math_functions라고 해도 되지만 필요한 함수만 불러올 수 있음
+
+print(cube(5))
+print(average([10, 20, 30]))
+```
+
+다른 파일에 있는 함수 불러와서 쓰기
+
+
+
+
+
+
 
