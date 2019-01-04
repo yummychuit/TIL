@@ -124,3 +124,11 @@ jupyter-nbextension enable rise --py --sys-prefix
 
 
 
+7. git add .
+
+   git commit -m 'ss3 | python intro | ~190102'  
+
+   => 어디서 어떤 것을 언제했는지로 저장해놓으면 좋음
+
+   git push
+
