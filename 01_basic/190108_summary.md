@@ -105,5 +105,113 @@ git message tip!
 
 
 
+===>>> 내용들을 컴퓨터에 쌓임!!! 처음에 저장을 해놓으면 변경사항을 추가해나가는 것. (형상관리?)
 
+​	 c9삭제하면 다 날라감ㅠㅠ -> cloud에 백업하자!! 
+
+​	git != github
+
+
+
+github에서 새로운 repo를 만든다! 바로 뜨는 설명서에서 아래 내용을 복사해서 붙여넣기한다
+
+```
+git remote add origin https://github.com/yummychuit/learn_git_prj.git
+```
+
+(cat .git/config에서 확인 가능) =>github을 찾아서 손가락질했다!!
+
+다음줄도 복붙 (git push 받아라!!)
+
+```
+git push -u origin master
+```
+
+github username & password 입력하기 (최초에만 시행됨)(password는 안나오니 알아서 잘쓰길..)
+
+
+
+### 자료를 가져오자!!!
+
+github에서 clone or download -  주소 복사 - 다른 컴퓨터의 gitbash의 홈(~)에서 
+
+(download ZIP은 git 없이 자료만 다운하는 것)
+
+git clone ( https://github.com/yummychuit/learn_git_prj.git  :복사 주소) (ssafy_git : 이름)
+
+cd ssafy_git 하면 master로 되어있는 것 확인 가능
+
+code . =>vscode로 현재 위치에 있는 것 다 뜸
+
+
+
+다른 컴퓨터에서 수정하고
+
+git add . 
+
+git commit -m 'blahblah'
+
+git push
+
+
+
+원래 컴퓨터에서 git pull 해서 받기
+
+
+
+pull안받고 수정해서 push하면 오류남
+
+다시 git pull하고 
+
+vim 뜨면 esc 누르고 :wq 하기
+
+그 후에 git push
+
+
+
+github에서 직접 수정하는 것이 최악................ 지양하세요..........
+
+
+
+### git commit 끝내고 바로 git push할것!! 수정한 내용이 있으면 push안됨!!!
+
+
+
+교육장 도착!!
+
+cd TIL
+
+git pull
+
+
+
+집가기 직전!!!!!!
+
+cd TIL/
+
+git add .
+
+git commit
+
+git push
+
+
+
+집도착!!!
+
+cd TIL/
+
+git pull
+
+
+
+잔다!!!!!
+
+cd TIL/
+
+git add .
+
+git commit
+
+git push
 
