@@ -1,0 +1,8 @@
+cmd - 관리자모드
+
+choco install googlechrome -y
+choco install typora -y
+choco install python --version 3.6.7
+choco install git -y
+choco install vscode -y
+

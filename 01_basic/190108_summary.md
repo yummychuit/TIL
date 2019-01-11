@@ -2,7 +2,7 @@
 
 ### 1.  
 
-git bash에서
+- git bash에서
 
 less .bash_history 히스토리 확인
 
