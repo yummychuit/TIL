@@ -3,6 +3,8 @@ import csv
 import re
 import requests
 from datetime import datetime, timedelta
+from time import sleep
+from PIL import Image
 
 KOBIS_KEY = os.getenv('KOBIS_KEY')
 NAVER_CLIENT_ID = os.getenv('NAVER_CLIENT_ID')
@@ -61,6 +63,7 @@ def naver():
         image = data_set['items'][0]['image']
         userRating = data_set['items'][0]['userRating']
         result_dict[naver_name] = [naver_code, image, link, userRating]
+        sleep(0.05)
     return result_dict
 
 naver_list = open('movie_naver.csv', 'a+', encoding='utf-8', newline='')
@@ -69,11 +72,12 @@ for na in naver().values():
     writer.writerow(na)
 naver_list.close() 
 
-#
+
 for save_img in naver().values():
     code = save_img[0]
     image_url = save_img[1]
     image = requests.get(image_url).content  
     filename = f'{code}.jpg'   
-with open(filename, 'wb') as f: 
-    f.write(image) 
+    with open(filename, 'wb') as f: 
+        f.write(image)
+f.close() 

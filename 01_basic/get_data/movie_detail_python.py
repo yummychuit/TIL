@@ -35,6 +35,7 @@ def total_data():
     return tot_dict
 
 def detail_data():
+    key = KOBIS_KEY
     targetCode = []
     final_data = total_data()
     for code in final_data.keys():
