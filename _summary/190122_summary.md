@@ -266,6 +266,14 @@ RENAME TO <new_table_name>;
 
 ### Table 컬럼 추가
 
+```sql
+
+```
+
+
+
+
+
 
 
 ## Data 조작 관련
