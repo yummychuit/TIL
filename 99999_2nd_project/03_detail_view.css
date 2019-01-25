@@ -1,0 +1,98 @@
+nav > div> ul > li {
+    font-size: 1.0em ;
+    }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+li.nav-item {
+        pointer-events: none;
+    }
+.header {
+    width: 100%;
+    height: 350px;
+    position: fixed;
+    text-align: center;
+    color: white;
+    background-image: url('https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    background-size: cover;
+    margin: 60px;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    font-family: Nanum Gothic;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: slategrey;
+    color: white;
+    padding: 3rem;
+  }
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    /* bottom: 20px; Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: grey; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+#myBtn:hover {
+    background-color: rgb(54, 51, 51); /* Add a dark-grey background on hover */
+  }
+.foot_link {
+    text-align: right;
+}
+
+body {
+    font-family: Fresca;
+}
+div.sebtitle {
+    float: center;
+    margin: 3rem 0 3rem 0;
+    text-align: center;
+    position: static;
+}
+/* hr.underline {
+    width: 70px;
+    align-items: center;
+    color: orange;
+    border: thin solid orange; 
+}*/
+
+/* hr.unederline {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 70px;
+  } */
+
+.card-deck {
+    margin: 1rem;
+    border: gray;
+}
