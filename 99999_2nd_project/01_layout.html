@@ -16,40 +16,46 @@
 </head>
 
 <body>
-    <div id="top"></div>
-    <nav class="sticky navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#">영화추천시스템</a>
+
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light pt-2">
+        <a class="navbar-brand" href="#"><strong>영화추천시스템</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                <li class="nav-item active">
+                <li class="nav-item-active active">
                     <a class="nav-link" href="#"><span class="glyphicon glyphicon-user"></span>Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" ><span class="glyphicon glyphicon-user"></span>친구 평점 보러가기</a>
+                <li class="nav-item none">
+                    <a class="nav-link" href="#"><span class="glyphicon glyphicon-user"></span>친구 평점 보러가기</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item none">
                     <a class="nav-link" href="#"><span class="glyphicon glyphicon-user"></span>Log in</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="header">
-        <div class="centered">
-            <h2>당신에게 어울리는 영화를 추천해 드립니다!</h2>
+
+
+    <div id="top"></div>
+    <section class='main'>
+        <div class="header">
+            <div class="centered">
+                <h2>당신에게 어울리는 영화를 추천해 드립니다!</h2>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="footer">
-        <span class="foot_content">Minjoo Kim</span>
-            <li class="back to top">
-                <a class="foot_link" href="#top"><span class="glyphicon glyphicon-user"></span> Top<span class="sr-only">(current)</span></a>
-            </li>
+    <div class="fixed-bottom">
+        <footer class="footer py-3">
+            <div class="foot-container d-flex justify-content-between">
+                <p class="mb-0">Minjoo</p>
+                <a class="foot-link" href="#top"><span class="glyphicon glyphicon-user"></span> Top<span class="sr-only">(current)</span></a>
+            </div>
+        </footer>
     </div>
-
 
 
     <!-- Optional JavaScript -->
@@ -63,6 +69,3 @@
 </body>
 
 </html>
-
-<!-- header - navigation bar 바로 아래 위치 -->
-<!-- footer - 내용 왼쪽-이름 오른쪽-backtotop link -->
