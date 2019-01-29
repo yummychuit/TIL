@@ -1,0 +1,29 @@
+{% extends 'workshop19/base.html' %}
+
+{% block title %}
+Student Info
+{% endblock %}
+
+{% block body %}
+<h1> 학생의 정보를 입력해주세요! </h1>
+<form action="/workshop19/out_content" method="POST">
+    {% csrf_token %}
+    <div>
+        <p>이름: </p><input type="text" name="input_name"/>
+    </div>
+    <div>
+        <p>이메일:</p><input type="text" name="input_email"/>
+    </div>
+    <div>
+        <p>생일:</p><input type="text" name="input_birth"/>
+    </div>
+    <div>
+        <p>나이:</p><input type="text" name="input_age"/>
+    </div>
+    <div>
+        <p><br></p>
+        <input type="submit" value="Submit"/>
+    </div>
+</form>
+
+{% endblock %}

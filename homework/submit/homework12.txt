@@ -1,0 +1,15 @@
+1. 
+디스플레이의 종류
+
+2.
+    <meta name="viewport" content="width=device-width, inital-scale=1,
+    minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+3.
+Extra small <576px
+Small >= 576px
+Medium >= 768px
+Large >=992px
+Extra large >=1200px
+
+576px, 768px, 992px, 1200px

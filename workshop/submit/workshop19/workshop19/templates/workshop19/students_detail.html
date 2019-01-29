@@ -1,0 +1,17 @@
+{% extends 'workshop19/base.html' %}
+
+{% block title %}
+Student No.{{ student.id }}
+{% endblock %}
+
+{% block body %}
+<h1>{{ student.id }}번 {{ student.name }}</h1>
+<p>
+    메일주소: {{ student.email }}<br>
+    생일: {{ student.birthday }} <br>
+    나이: {{ student.age }}<br>
+</p>
+<p>
+    <a href="/workshop19/students/">Back to Student List</a>
+</p>
+{% endblock %}
