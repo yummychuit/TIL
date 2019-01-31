@@ -18,7 +18,9 @@
 | 15   | `workshop15.sql`                      | `homework15.txt`  |
 | 16   | `workshop16.sql`                      | `homework16.sql`  |
 | 17   | `workshop17/...`(app)                 | `homework17.py`   |
-| 18   |                                       |                   |
+| 19   | `workshop19/...`(app)                 | `homework19.md`   |
+| 20   | `workshop20.py`                       | `homework20.md`   |
+| 21   | `workshop21.html`                     | `homework21.md`   |
 
 
 
